@@ -2,17 +2,64 @@
 <html>
     <title>Yago Pajariño</title>
     <head>
+        <link rel="icon" href="./static/logo.png">
         <link href="style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Playfair+Display:wght@400;500&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&family=Spline+Sans:wght@300;400&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="">
-            <div class="welcome">
-                <h1><a id="name" href="./index.html">Yago Pajariño</a></h1>
-                <a id="resume" hidden href="./yago_pajarino-CV.pdf">CURRICULUM</a>
-            </div>
-        </div>
+        <header>
+            <h1><a id="name" href="./index.html">Yago Pajariño</a></h1>
+            <a id="resume" href="./yago_pajarino-CV.pdf">CURRICULUM</a>
+        </header>
+        <main>
+            <section class="bodySection">
+                <h2 class="sectionHeader">About</h2>
+                <p>Hello World! I'm a full stack web developer based in Buenos Aires, Argentina. Studied business at <a class="bodyLink" href="http://uca.edu.ar/en" target="_blank"> Universidad Católica Argentina</a> and currently studying Computer Science at <a class="bodyLink" href="https://www.uba.ar/" target="_blank">Universidad de Buenos Aires</a>. Yep, into the double degree journey. &#x1f605</p>
+            </section>
+            <section class="bodySection">
+                <h2 class="sectionHeader">Experience</h2>
+                <p>Here are some projects and certifications I've been working on</p>
+                <ul>
+                    <li>Freelancing.com - Web Scrapping</li>
+                    <li>Argyando</li>
+                    <li>MoneyManager</li>
+                    <li>Harvard's CS50</li>
+                    <li>The Odin Project</li>
+                    <li>Camuzzi Gas - process automation</li>
+                </ul>
+                <p>Visit my <a class="bodyLink" href="https://github.com/yagopajarino" target="blank_">github</a> account for more. &#x1f913</p>
+            </section>
+            <section class="bodySection">
+                <h2 class="sectionHeader">Writings</h2>
+                <p>I like to write about math, data, probability and stadistics too.</p>
+                <div class="writingsContainer">
+                    <div class="tile">
+                        <a href="./writings/ParadojaCumpleaños.pdf" class="tileHeader" target="_blank">Birthday paradox (spanish)
+                            <img class="tileImg" src="./writings/paradojaPortada.png" alt="">
+                        </a>
+                    </div>
+                    <div class="tile">
+                        <a href="./writings/properatiAnalisisInmobiliario.pdf" class="tileHeader" target="_blank">Housing data analysis (spanish)
+                            <img class="tileImg" src="./writings/housingPortada.png" alt="">
+                        </a>
+                        <span>Or <a class="bodyLink" href="https://nbviewer.org/github/yagopajarino/ds-properati/blob/main/properatiAnalisisInmobiliario.ipynb" target="_blank">jupyter notebook</a></span>
+                    </div>
+                </div>
+            </section>
+            <section class="bodySection">
+                <h2 class="sectionHeader">Get in touch</h2>
+                <div id="contactContainer">
+                    <div class="logosContainer">
+                        <a href="https://www.linkedin.com/in/yagopajarino/" target="_blank"><img class="socialLogo" src="./static/LinkedIn-Logos/LI-In-Bug.png" alt=""></a>
+                        <a href="https://www.instagram.com/yagopajarino/" target="_blank"><img class="socialLogo" src="./static/IG Glyph Icon/Instagram_Glyph_Gradient_RGB.png" alt=""></a>
+                        <a href="https://github.com/yagopajarino" target="_blank"><img class="socialLogo" src="./static/GitHub-Logos/GitHub_Logo.png" alt=""></a>
+                        <a href="https://twitter.com/yagopajarino" target="_blank"><img class="socialLogo" src="./static/Twitter logo/PNG/2021 Twitter logo - blue.png" alt=""></a>
+                    </div>
+                    <a class="bodyLink" href="mailto:yagopajarino@outlook.com"><p>yagopajarino@outlook.com</p></a>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
