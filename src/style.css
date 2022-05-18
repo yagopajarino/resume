@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+* {
+    border: 1px solid red;
+}
+
+.mainContainer {
+    display: flex;
+}
+
+.infoContainer {
+    max-width: 25%;
+}
