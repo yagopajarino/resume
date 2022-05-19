@@ -7,7 +7,10 @@ import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 import Stats from "./components/Stats";
 import "./style.css";
+import logo from "./static/logo.png";
 
+let icon = document.querySelector("#icon");
+icon.href = logo;
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
