@@ -3,16 +3,25 @@ import { Outlet, Link } from "react-router-dom";
 export default function App() {
   return (
     <div>
-      <nav
-        style={{
-          borderBottom: "solid 1px",
-          paddingBottom: "1rem",
-        }}
-      >
-        <Link to="/">Yago Pajariño</Link>
-        <Link to="/about">ABOUT</Link> |<Link to="/resume">RESUME</Link> |
-        <Link to="/projects">PROJECTS</Link> |<Link to="/stats">STATS</Link> |
-        <Link to="/contact">CONTACT</Link>
+      <nav>
+        <Link to="/" className="navNombre">
+          YAGO PAJARIÑO
+        </Link>
+        <Link to="/about" className="navlink">
+          ABOUT
+        </Link>
+        <Link to="/resume" className="navlink">
+          RESUME
+        </Link>
+        <Link to="/projects" className="navlink">
+          PROJECTS
+        </Link>
+        <Link to="/stats" className="navlink">
+          STATS
+        </Link>
+        <Link to="/contact" className="navlink">
+          CONTACT
+        </Link>
       </nav>
       <div className="mainContainer">
         <div className="infoContainer">
