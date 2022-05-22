@@ -50,6 +50,8 @@ nav > a {
     padding: 0.5rem 1.75rem 0.5rem 1.75rem;
     font-family: 'Plus Jakarta Sans', sans-serif;
     border-right: 1px solid #cacaca;
+    transition: 0.35s ease;
+
 }
 
 .navlink {
@@ -59,12 +61,51 @@ nav > a {
 
 nav > a:hover {
     color: #0f4ba6;
-    transition: 0.35s ease;
 }
 
 .navNombre {
     font-weight: 800;
-    letter-spacing: 1mm;
-    color: #3d3b3b;
 }
 
+.profilePic > img {
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #cacaca;
+}
+
+.infoContainer {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+.spaced {
+    letter-spacing: 1mm;
+}
+
+.mail {
+    font-size: 1.35rem;
+}
+
+.link {
+    color: #777676;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    transition: all 0.35s ease;
+}
+
+.link:hover {
+    color: #0f4ba6;
+    text-decoration-color: transparent;
+}
+
+.padDiv {
+    padding: 1rem 0;
+}
+
+.shortAbout {
+    border-top: 1px solid #cacaca;
+}
+
+.black {
+    color: #3d3b3b;
+}

@@ -1,10 +1,11 @@
 import { Outlet, Link } from "react-router-dom";
+import profilePic from "../static/profilePic.jpeg";
 
 export default function App() {
   return (
     <div>
       <nav>
-        <Link to="/" className="navNombre">
+        <Link to="/" className="navNombre spaced black">
           YAGO PAJARIÑO
         </Link>
         <Link to="/about" className="navlink">
@@ -25,17 +26,17 @@ export default function App() {
       </nav>
       <div className="mainContainer">
         <div className="infoContainer">
-          <div className="profileResume">
+          <div className="profileResume padDiv">
             <div className="profilePic">
-              <img alt="Yago Pajariño"></img>
+              <img src={profilePic} alt="Yago Pajariño"></img>
             </div>
-            <h1>Yago Pajariño</h1>
+            <h1 className="spaced black">YAGO PAJARIÑO</h1>
             <a href="mailto:yagopajarino@outlook.com">
-              <h2>yagopajarino@outlook.com</h2>
+              <p className="link mail">yagopajarino@outlook.com</p>
             </a>
           </div>
-          <div className="shortAbout">
-            <h3>ABOUT</h3>
+          <div className="shortAbout padDiv">
+            <h3 className="spaced black">ABOUT</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               eget laoreet ex, in pretium nulla. Fusce scelerisque, lacus ut
