@@ -18,18 +18,33 @@ a {
 }
 
 #root {
-    padding-top: 4.5rem;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+h1 {
+    letter-spacing: 1mm;
+    color: #3d3b3b;
+}
+
+h3 {
+    letter-spacing: 1mm;
+    color: #3d3b3b;
+}
+
+section {
+    padding: 1rem 0;
+    border-bottom: 1px solid #cacaca;
 }
 
 .mainContainer {
     display: flex;
-    padding: 4% 10%;
-    background-color: #f4f4f4;
-    height: 100vh;
+    padding: 10rem 0 0 10rem;
 }
 
 .infoContainer {
     max-width: 25%;
+    min-width: 300px;
 }
 
 nav {
@@ -50,7 +65,7 @@ nav > a {
     padding: 0.5rem 1.75rem 0.5rem 1.75rem;
     font-family: 'Plus Jakarta Sans', sans-serif;
     border-right: 1px solid #cacaca;
-    transition: 0.35s ease;
+    transition: 0.3s ease;
 
 }
 
@@ -65,6 +80,8 @@ nav > a:hover {
 
 .navNombre {
     font-weight: 800;
+    letter-spacing: 1mm;
+    color: #3d3b3b;
 }
 
 .profilePic > img {
@@ -75,11 +92,6 @@ nav > a:hover {
 
 .infoContainer {
     font-family: 'Plus Jakarta Sans', sans-serif;
-
-}
-
-.spaced {
-    letter-spacing: 1mm;
 }
 
 .mail {
@@ -90,7 +102,7 @@ nav > a:hover {
     color: #777676;
     text-decoration: underline;
     text-decoration-style: dotted;
-    transition: all 0.35s ease;
+    transition: all 0.3s ease;
 }
 
 .link:hover {
@@ -102,10 +114,50 @@ nav > a:hover {
     padding: 1rem 0;
 }
 
-.shortAbout {
-    border-top: 1px solid #cacaca;
+.button {
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.5mm;
+    margin: 1rem 0;
+    border: 1px solid #cacaca;
+    transition: all 0.3s ease;
+    color: #3d3b3b;
 }
 
-.black {
-    color: #3d3b3b;
+.button:hover {
+    color: #0f4ba6;
+    border-color: #0f4ba6;
+}
+
+footer {
+    margin: 2rem 0;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+svg {
+    transition: all 0.3s ease;
+}
+
+svg:hover {
+    color: #0f4ba6!important;
+}
+
+footer > p {
+    text-align: center;
+    font-size: small;
+    margin: 2rem;
+    color: #7f7f7f;
+    letter-spacing: 0.25mm;
 }

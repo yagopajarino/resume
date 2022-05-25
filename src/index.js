@@ -1,11 +1,11 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./components/App";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Projects from "./components/Projects";
-import Resume from "./components/Resume";
-import Stats from "./components/Stats";
+import About from "./components/pages/About";
+import Contact from "./components/pages/Contact";
+import Projects from "./components/pages/Projects";
+import Resume from "./components/pages/Resume";
+import Stats from "./components/pages/Stats";
 import "./style.css";
 import logo from "./static/logo.png";
 

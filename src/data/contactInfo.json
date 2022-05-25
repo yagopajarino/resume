@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+      "name": "github",
+      "icon": ["fab", "github"],
+      "link": "https://github.com/yagopajarino"
+    },
+    {
+        "id": 1,
+      "name": "instagram",
+      "icon": ["fab", "instagram"],
+      "link": "https://www.instagram.com/yagopajarino/"
+    },
+    {
+        "id": 2,
+      "name": "twitter",
+      "icon": ["fab", "twitter"],
+      "link": "https://twitter.com/yagopajarino"
+    },
+    {
+        "id": 3,
+      "name": "linkedin",
+      "icon": ["fab", "linkedin"],
+      "link": "https://www.linkedin.com/in/yagopajarino/"
+    },
+    {
+        "id": 4,
+      "name": "main",
+      "icon": ["fas", "envelope"],
+      "link": "mailto:yagopajarino@outlook.com"
+    }
+]
