@@ -25,6 +25,7 @@ a {
 h1 {
     letter-spacing: 1mm;
     color: #3d3b3b;
+    font-weight: 900;
 }
 
 h3 {
@@ -37,9 +38,23 @@ section {
     border-bottom: 1px solid #cacaca;
 }
 
-.mainContainer {
-    display: flex;
-    padding: 10rem 0 0 10rem;
+article {
+    background-color: #ffffff;
+    border: 1px solid hsl(0deg 0% 63% / 30%);
+}
+
+.container {
+    padding: 7.5rem 10rem 0 10rem;
+    display: grid; 
+    grid-template-columns: 0.7fr 1.3fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: "lat main"; 
+}
+
+.lat { grid-area: lat; }
+.main { 
+    grid-area: main;
 }
 
 .infoContainer {
@@ -160,4 +175,9 @@ footer > p {
     margin: 2rem;
     color: #7f7f7f;
     letter-spacing: 0.25mm;
+}
+
+.boxContainer {
+    border-bottom: 1px solid hsl(0deg 0% 63% / 30%);
+    padding: 2rem 3rem;
 }

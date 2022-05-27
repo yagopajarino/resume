@@ -15,7 +15,7 @@ export default function ProfileSection() {
   }
 
   return (
-    <div className="infoContainer">
+    <div className="lat infoContainer">
       <section className="profileResume">
         <div className="profilePic">
           <img src={profilePic} alt="Yago Pajariño"></img>

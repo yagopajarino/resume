@@ -1,3 +1,7 @@
+import SectionHeader from "../../templates/sectionHeader";
+import pagesData from "../../data/pagesData.json";
+
 export default function Stats() {
-  return <h1>Stats</h1>;
+  let data = pagesData.filter((item) => item.title == "STATS")[0];
+  return <SectionHeader title={data.title} subtitle={data.subtitle} />;
 }
