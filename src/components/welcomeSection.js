@@ -1,19 +1,42 @@
+import { faMinimize } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
-import typing from "../templates/typing";
 
 export default function WelcomeSection() {
   const [texto, setTexto] = useState("");
 
   useEffect(() => {
     let i = 0;
-    let s = "hola que tal como le va?";
+    let greetings = [
+      "Hello",
+      "Hola",
+      "Hallo",
+      "Ahoj",
+      "Hei",
+      "Sveiki",
+      "Ciao",
+      "Olá",
+      "привет",
+      "Salut",
+    ];
 
+    function lastIndexIdem(index) {
+      let p = greetings[index];
+      let q = greetings[index + (1 % greetings.length)];
+      let n = 0;
+      while (n < Math.min(p.length, q.length) && p[n] == q[n]) {
+        n++;
+      }
+      return n === 0 ? 0 : n - 1;
+    }
+
+    let j = 0;
     const intervalo = setInterval(() => {
-      if (i < s.length - 1) {
-        setTexto(s.slice(0, i + 1));
+      let palActual = greetings[j];
+      if (i < palActual.length - 1) {
+        setTexto(palActual.slice(0, i + 1));
         i++;
       } else {
-        setTexto(s);
+        setTexto(palActual);
         clearInterval(intervalo);
       }
     }, 100);
