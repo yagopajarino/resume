@@ -45,16 +45,19 @@ article {
 
 .container {
     padding: 7.5rem 10rem 0 10rem;
-    display: grid; 
-    grid-template-columns: 0.7fr 1.3fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: "lat main"; 
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
 }
 
-.lat { grid-area: lat; }
+.lat {
+    width: 25%;
+}
+
 .main { 
-    grid-area: main;
+    min-width: 500px;
+    width: 60%;
+    margin-left: 5rem;
 }
 
 .infoContainer {
@@ -111,6 +114,7 @@ nav > a:hover {
 
 .mail {
     font-size: 1.35rem;
+    letter-spacing: 0.3mm;
 }
 
 .link {

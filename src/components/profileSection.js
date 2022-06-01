@@ -2,6 +2,7 @@ import profilePic from "../static/profilePic.jpeg";
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import Footer from "./footer";
+import React from "react";
 
 export default function ProfileSection() {
   const [profileBtn, setProfileBtn] = useState(["LEARN MORE", "./resume"]);

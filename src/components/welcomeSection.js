@@ -7,7 +7,7 @@ export default function WelcomeSection() {
   useEffect(() => {
     let i = 0;
     let greetings = [
-      "Hello",
+      "page",
       "Hola",
       "Hallo",
       "Ahoj",
@@ -44,7 +44,9 @@ export default function WelcomeSection() {
 
   return (
     <div className="welcomeSection">
-      <h1>{texto}</h1>
+      <p>
+        Welcome to my <span style={{ fontWeight: 800 }}>{texto}</span>
+      </p>
     </div>
   );
 }
