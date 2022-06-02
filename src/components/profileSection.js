@@ -29,10 +29,16 @@ export default function ProfileSection() {
       <section className="shortAbout">
         <h3>ABOUT</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget
-          laoreet ex, in pretium nulla. Fusce scelerisque, lacus ut gravida
-          pretium, dui turpis efficitur eros, vitae condimentum odio risus nec
-          arcu.
+          Hey! I'm Yago. I like to create things, to work with data and learn
+          stuff. &#x1f913; <br></br>I am a{" "}
+          <a className="link" href="https://uca.edu.ar/es/home">
+            UCA
+          </a>{" "}
+          business graduate and{" "}
+          <a className="link" href="https://www.dc.uba.ar/">
+            UBA
+          </a>{" "}
+          computer science student.
         </p>
         <div className="padDiv" style={{ margin: "1em 0" }}>
           <Link to={profileBtn[1]} className="button" onClick={changeBtn}>
