@@ -8,7 +8,7 @@ import Resume from "./components/pages/Resume";
 import Stats from "./components/pages/Stats";
 import "./style.css";
 import logo from "./static/logo.png";
-import WelcomeSection from "./components/welcomeSection";
+import Welcome from "./components/pages/Welcome";
 
 let icon = document.querySelector("#icon");
 icon.href = logo;
@@ -17,7 +17,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="/" element={<WelcomeSection />} />
+        <Route path="/" element={<Welcome />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="Projects" element={<Projects />} />

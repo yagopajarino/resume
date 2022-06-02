@@ -1,11 +1,15 @@
-import { text } from "@fortawesome/fontawesome-svg-core";
 import { faMinimize } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
+import showdown from "showdown";
 
-export default function WelcomeSection() {
+let converter = new showdown.Converter();
+let text = "# hello, markdown!";
+let mainContent = converter.makeHtml(text);
+
+export default function Welcome() {
   const [texto, setTexto] = useState("");
 
-  useEffect((t) => {
+  useEffect(() => {
     let i = 0;
     let greetings = [
       "Hello",
@@ -46,10 +50,11 @@ export default function WelcomeSection() {
   }, []);
 
   return (
-    <div className="welcomeSection">
+    <article className="main welcomeSection">
       <header>
         <span className="welcomeTitle">&#x1f44b; {texto}</span>
       </header>
-    </div>
+      <main dangerouslySetInnerHTML={{ __html: mainContent }}></main>
+    </article>
   );
 }
