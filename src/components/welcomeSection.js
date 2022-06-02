@@ -22,14 +22,14 @@ export default function WelcomeSection() {
 
     escribirPalabra(greetings[0]);
     i++;
-    const timeout = setInterval(() => {
+    setInterval(() => {
       if (i < greetings.length) {
         escribirPalabra(greetings[i]);
         i++;
       } else {
         i = 0;
       }
-    }, 3000);
+    }, 150 * greetings[i].length + 1000);
 
     function escribirPalabra(palabra) {
       let j = 0;
