@@ -1,52 +1,55 @@
+import { text } from "@fortawesome/fontawesome-svg-core";
 import { faMinimize } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 
 export default function WelcomeSection() {
   const [texto, setTexto] = useState("");
 
-  useEffect(() => {
+  useEffect((t) => {
     let i = 0;
     let greetings = [
-      "page",
+      "Hello",
+      "Salut",
       "Hola",
-      "Hallo",
-      "Ahoj",
+      "Ciao",
+      "привет",
       "Hei",
       "Sveiki",
-      "Ciao",
+      "Hallo",
       "Olá",
-      "привет",
-      "Salut",
+      "Ahoj",
     ];
 
-    function lastIndexIdem(index) {
-      let p = greetings[index];
-      let q = greetings[index + (1 % greetings.length)];
-      let n = 0;
-      while (n < Math.min(p.length, q.length) && p[n] == q[n]) {
-        n++;
-      }
-      return n === 0 ? 0 : n - 1;
-    }
-
-    let j = 0;
-    const intervalo = setInterval(() => {
-      let palActual = greetings[j];
-      if (i < palActual.length - 1) {
-        setTexto(palActual.slice(0, i + 1));
+    escribirPalabra(greetings[0]);
+    i++;
+    const timeout = setInterval(() => {
+      if (i < greetings.length) {
+        escribirPalabra(greetings[i]);
         i++;
       } else {
-        setTexto(palActual);
-        clearInterval(intervalo);
+        i = 0;
       }
-    }, 100);
+    }, 3000);
+
+    function escribirPalabra(palabra) {
+      let j = 0;
+      const intervalo = setInterval(() => {
+        if (j < palabra.length) {
+          setTexto(palabra.slice(0, j + 1));
+          j++;
+        } else {
+          setTexto(palabra);
+          clearInterval(intervalo);
+        }
+      }, 150);
+    }
   }, []);
 
   return (
     <div className="welcomeSection">
-      <p>
-        Welcome to my <span style={{ fontWeight: 800 }}>{texto}</span>
-      </p>
+      <header>
+        <span className="welcomeTitle">&#x1f44b; {texto}</span>
+      </header>
     </div>
   );
 }
