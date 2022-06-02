@@ -1,13 +1,13 @@
 import { faMinimize } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import showdown from "showdown";
+import content from "../../data/pagesContent/welcome.md";
 
 let converter = new showdown.Converter();
-let text = "# hello, markdown!";
-let mainContent = converter.makeHtml(text);
 
 export default function Welcome() {
   const [texto, setTexto] = useState("");
+  const [mainContent, setMainContent] = useState("");
 
   useEffect(() => {
     let i = 0;
@@ -47,6 +47,14 @@ export default function Welcome() {
         }
       }, 150);
     }
+  }, []);
+
+  useEffect(() => {
+    import("../../data/pagesContent/welcome.md").then((res) =>
+      fetch(res.default)
+        .then((response) => response.text())
+        .then((text) => setMainContent(converter.makeHtml(text)))
+    );
   }, []);
 
   return (
