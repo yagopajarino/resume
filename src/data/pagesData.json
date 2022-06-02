@@ -1,22 +1,22 @@
 [
     {
-        "title": "ABOUT",
+        "title": "About",
         "subtitle": "Word count"
     },
     {
-        "title": "CONTACT",
-        "subtitle": "KEEP IN TOUCH"
+        "title": "Contact",
+        "subtitle": "Keep in touch"
     },
     {
-        "title": "RESUME",
-        "subtitle": "THE FORMAL ONE"
+        "title": "Resume",
+        "subtitle": "The formal one"
     },
     {
-        "title": "PROJECTS",
-        "subtitle": "THE GOD ONES"
+        "title": "Projects",
+        "subtitle": "The god ones"
     },
     {
-        "title": "STATS",
-        "subtitle": "MY FAVORITE SECTION"
+        "title": "Stats",
+        "subtitle": "My fav section"
     }
 ]

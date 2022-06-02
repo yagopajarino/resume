@@ -21,7 +21,7 @@ export default function ProfileSection() {
         <div className="profilePic">
           <img src={profilePic} alt="Yago Pajariño"></img>
         </div>
-        <h1>YAGO PAJARIÑO</h1>
+        <h2>YAGO PAJARIÑO</h2>
         <a href="mailto:yagopajarino@outlook.com">
           <p className="link mail">yagopajarino@outlook.com</p>
         </a>
