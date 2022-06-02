@@ -1,3 +1,5 @@
+/* Tags */
+
 html {
     font-size: 15px;
 }
@@ -8,18 +10,9 @@ body {
     height: 100vh;
 }
 
-/* * {
-    border: 1px solid red;
-} */
-
 a {
     color: inherit;
     text-decoration: none;
-}
-
-#root {
-    background-color: #f4f4f4;
-    min-height: 100vh;
 }
 
 h1 {
@@ -49,6 +42,10 @@ h4 {
     color: #000000;
 }
 
+p {
+    line-height: 2rem;
+    font-size: 1.1rem;
+}
 
 section {
     padding: 1rem 0;
@@ -60,26 +57,8 @@ article {
     border: 1px solid hsl(0deg 0% 63% / 30%);
 }
 
-.container {
-    padding: 7.5rem 10rem 0 10rem;
-    display: flex;
-    justify-content:flex-start;
-    flex-wrap: wrap;
-}
-
-.lat {
-    width: 25%;
-}
-
-.main { 
-    min-width: 500px;
-    width: 60%;
-    margin-left: 5rem;
-}
-
-.infoContainer {
-    max-width: 25%;
-    min-width: 300px;
+main {
+    padding: 3rem 4rem;
 }
 
 nav {
@@ -104,13 +83,68 @@ nav > a {
 
 }
 
+nav > a:hover {
+    color: #0f4ba6;
+}
+
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+svg {
+    transition: all 0.3s ease;
+}
+
+svg:hover {
+    color: #0f4ba6!important;
+}
+
+footer > p {
+    text-align: center;
+    font-size: small;
+    margin: 2rem;
+    color: #7f7f7f;
+    letter-spacing: 0.25mm;
+}
+
+article {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 3rem 4rem;
+    border-bottom: 1px solid hsl(0deg 0% 63% / 30%);
+}
+
+/* Clases */
+
+.container {
+    padding: 10rem 10rem 0 13rem;
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+
+.lat {
+    width: 25%;
+}
+
+.main { 
+    min-width: 500px;
+    width: 60%;
+    margin-left: 5rem;
+}
+
+.infoContainer {
+    max-width: 25%;
+    min-width: 300px;
+}
+
 .navlink {
     color: #17161696;
     letter-spacing: 0.5mm;
-}
-
-nav > a:hover {
-    color: #0f4ba6;
 }
 
 .navNombre {
@@ -120,7 +154,7 @@ nav > a:hover {
 }
 
 .profilePic > img {
-    height: 200px;
+    height: 180px;
     border-radius: 50%;
     border: 1px solid #cacaca;
 }
@@ -136,9 +170,9 @@ nav > a:hover {
 
 .link {
     color: #777676;
-    text-decoration: underline;
-    text-decoration-style: dotted;
+    border-bottom: 1px dotted hsla(0,0%,62.7%,.65);
     transition: all 0.3s ease;
+    width: fit-content
 }
 
 .link:hover {
@@ -176,38 +210,14 @@ footer {
     justify-content: space-evenly;
 }
 
-ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
-}
-
-svg {
-    transition: all 0.3s ease;
-}
-
-svg:hover {
-    color: #0f4ba6!important;
-}
-
-footer > p {
-    text-align: center;
-    font-size: small;
-    margin: 2rem;
-    color: #7f7f7f;
-    letter-spacing: 0.25mm;
-}
-
-article {
-    font-family: 'Roboto', sans-serif;
-}
-
 .welcomeTitle {
     font-size: 3rem;
     font-weight: 300;
 }
 
-header {
-    padding: 3rem 4rem;
-    border-bottom: 1px solid hsl(0deg 0% 63% / 30%);
+/* Ids */
+
+#root {
+    background-color: #f4f4f4;
+    min-height: 100vh;
 }
