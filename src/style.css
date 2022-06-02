@@ -13,6 +13,15 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+    color: #777676;
+    border-bottom: 1px dotted hsla(0,0%,62.7%,.65);
+    transition: all 0.3s ease;
+    width: fit-content
+}
+
+a:hover {
+    color: #0f4ba6;
+    border-bottom-color: transparent;
 }
 
 h1 {
@@ -20,7 +29,7 @@ h1 {
     color: #000000;
     font-weight: 300;
     font-size: 3rem;
-    margin-top: 0;
+    margin: 0;
 }
 
 h2 {
@@ -93,6 +102,10 @@ ul {
     margin: 0; /* Remove margins */
 }
 
+.links > li > a {
+    border: none;
+}
+
 svg {
     transition: all 0.3s ease;
 }
@@ -145,12 +158,14 @@ header {
 .navlink {
     color: #17161696;
     letter-spacing: 0.5mm;
+    border-bottom: 0;
 }
 
 .navNombre {
     font-weight: 800;
     letter-spacing: 1mm;
     color: #3d3b3b;
+    border-bottom: 0;
 }
 
 .profilePic > img {
@@ -177,7 +192,7 @@ header {
 
 .link:hover {
     color: #0f4ba6;
-    text-decoration-color: transparent;
+    border-bottom-color: transparent;
 }
 
 .padDiv {
