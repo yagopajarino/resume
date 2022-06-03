@@ -1,0 +1,26 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+main {
+    padding: 3rem 4rem;
+}
+
+#root {
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 10rem 10rem 0 13rem;
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+

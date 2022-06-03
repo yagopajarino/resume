@@ -6,10 +6,14 @@ import Contact from "./components/pages/Contact";
 import Projects from "./components/pages/Projects";
 import Resume from "./components/pages/Resume";
 import Stats from "./components/pages/Stats";
-import "./style/main.css";
-import "./style/github-md.css";
 import logo from "./static/logo.png";
 import Welcome from "./components/pages/Welcome";
+
+import "./style/root.css";
+import "./style/markdown.css";
+import "./style/nav.css";
+import "./style/info-container.css";
+import "./style/article-header.css";
 
 let icon = document.querySelector("#icon");
 icon.href = logo;

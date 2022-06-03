@@ -1,0 +1,18 @@
+article {
+    background-color: #ffffff;
+    border: 1px solid hsl(0deg 0% 63% / 30%);
+    font-family: 'Roboto', sans-serif;
+    min-width: 500px;
+    width: 60%;
+    margin-left: 5rem;
+}
+
+article header {
+    padding: 3rem 4rem 0 4rem;
+}
+
+article header span, h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0;
+}

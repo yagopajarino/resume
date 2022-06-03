@@ -1,0 +1,126 @@
+.infoContainer {
+    max-width: 25%;
+    min-width: 300px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    width: 25%; 
+}
+
+.infoContainer a {
+    color: inherit;
+    text-decoration: none;
+    color: #777676;
+    border-bottom: 1px dotted hsla(0,0%,62.7%,.65);
+    transition: all 0.3s ease;
+    width: fit-content
+}
+
+.infoContainer a:hover {
+    color: #0f4ba6;
+    border-bottom-color: transparent;
+}
+
+.infoContainer ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+.infoContainer section {
+    padding: 1rem 0;
+    border-bottom: 1px solid #cacaca;
+}
+
+
+/* Profile resume */
+
+.infoContainer .profileResume p {
+    font-size: 1.35rem;
+    letter-spacing: 0.3mm;
+    color: #777676;
+    border-bottom: 1px dotted hsla(0,0%,62.7%,.65);
+    transition: all 0.3s ease;
+    width: fit-content
+}
+
+.infoContainer .profileResume p:hover {
+    color: #0f4ba6;
+    border-bottom-color: transparent;
+}
+
+.infoContainer .profileResume h2 {
+    letter-spacing: 1mm;
+    color: #3d3b3b;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.infoContainer .profileResume img {
+    height: 180px;
+    border-radius: 50%;
+    border: 1px solid #cacaca;
+}
+
+/* Short about */
+
+.infoContainer .shortAbout h3 {
+    letter-spacing: 1mm;
+    color: #3d3b3b;
+}
+
+.infoContainer .shortAbout p {
+    line-height: 2rem;
+    font-size: 1.1rem;
+}
+
+.infoContainer .shortAbout .button {
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.5mm;
+    margin: 1rem 0;
+    border: 1px solid #cacaca;
+    transition: all 0.3s ease;
+    color: #3d3b3b;
+}
+
+.infoContainer .shortAbout div {
+    padding: 1rem 0;
+    margin: 1em 0px;
+}
+
+.infoContainer .shortAbout .button:hover {
+    color: #0f4ba6;
+    border-color: #0f4ba6;
+}
+
+/* Footer */
+
+.infoContainer footer {
+    margin: 2rem 0;
+}
+
+.infoContainer footer ul {
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.infoContainer footer .links a {
+    border: none;
+}
+
+.infoContainer footer p {
+    text-align: center;
+    font-size: small;
+    margin: 2rem;
+    color: #7f7f7f;
+    letter-spacing: 0.25mm;
+}
+
+.infoContainer footer svg {
+    transition: all 0.3s ease;
+}
+
+.infoContainer footer svg:hover {
+    color: #0f4ba6!important;
+}
