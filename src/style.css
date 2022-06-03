@@ -33,9 +33,9 @@ h1 {
 }
 
 h2 {
-    letter-spacing: 1mm;
-    color: #3d3b3b;
-    font-weight: 700;
+    letter-spacing: .15mm;
+    color: #000000;
+    font-weight: 400;
     font-size: 2rem;
 }
 
@@ -197,6 +197,13 @@ header {
 
 .padDiv {
     padding: 1rem 0;
+}
+
+.profileName {
+    letter-spacing: 1mm;
+    color: #3d3b3b;
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 .button {
