@@ -5,7 +5,7 @@ export default function Article(props) {
   return (
     <article className="main" id="routerContainer">
       <SectionHeader title={props.title} subtitle={props.subtitle} />
-      <SectionMain content={props.content} />
+      <SectionMain content={props.fileName} />
     </article>
   );
 }

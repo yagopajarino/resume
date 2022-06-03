@@ -5,5 +5,7 @@ export default function Projects() {
   let data = pagesData.filter(
     (item) => item.title.toUpperCase() == "PROJECTS"
   )[0];
-  return <Article title={data.title} subtitle={data.subtitle} />;
+  return (
+    <Article title={data.title} subtitle={data.subtitle} fileName="projects" />
+  );
 }
