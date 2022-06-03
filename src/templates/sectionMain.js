@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import showdown from "showdown";
 
 let converter = new showdown.Converter();
+showdown.setFlavor("github");
 
 export default function SectionMain(props) {
   const [mainContent, setMainContent] = useState("");
@@ -13,5 +14,10 @@ export default function SectionMain(props) {
     );
   }, []);
 
-  return <main dangerouslySetInnerHTML={{ __html: mainContent }}></main>;
+  return (
+    <main
+      className="markdown-body"
+      dangerouslySetInnerHTML={{ __html: mainContent }}
+    ></main>
+  );
 }
