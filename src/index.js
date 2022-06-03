@@ -6,7 +6,8 @@ import Contact from "./components/pages/Contact";
 import Projects from "./components/pages/Projects";
 import Resume from "./components/pages/Resume";
 import Stats from "./components/pages/Stats";
-import "./style.css";
+import "./style/main.css";
+import "./style/github-md.css";
 import logo from "./static/logo.png";
 import Welcome from "./components/pages/Welcome";
 
