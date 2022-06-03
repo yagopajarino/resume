@@ -62,7 +62,10 @@ export default function Welcome() {
       <header>
         <span className="welcomeTitle">&#x1f44b; {texto}</span>
       </header>
-      <main dangerouslySetInnerHTML={{ __html: mainContent }}></main>
+      <main
+        className="markdown-body"
+        dangerouslySetInnerHTML={{ __html: mainContent }}
+      ></main>
     </article>
   );
 }
