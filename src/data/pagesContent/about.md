@@ -30,13 +30,15 @@ In August 2021 I left Camuzzi looking for new positions related to software and 
 - Queen, The Rolling Stones, Guns N' Roses.
 - Bee Gees, Donna Summer, Boney M.
 - Eric Clapton, Elton John, Van Morrison, Chuck Berry.
-- Fórmula Uno, Moto GP.
+- Formula Uno, Moto GP.
 - Work to live.
 
 ## Dislikes
 
 - Limited freedom.
 - Disiformation.
+- Nepotism.
+- Astrology.
 - Live to work.
 
 ## Hobbies
