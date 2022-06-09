@@ -46,6 +46,6 @@ In August 2021 I left Camuzzi looking for new positions related to software and 
 - Attending [DC talks](https://www.dc.uba.ar/event/)
 - Blogging
 - Coffee thursday
-- Youtube favourites channels
+- Youtube favs: [derivando](https://www.youtube.com/c/Derivando), [Stuff Made Here](https://www.youtube.com/c/StuffMadeHere), [Mark Rober](https://www.youtube.com/c/MarkRober)
 - Spotify favourites podcasts
-- Books list
+- Reading. [Goodread shelf](https://www.goodreads.com/review/list/132816000-yago?ref=nav_mybooks&shelf=read)
