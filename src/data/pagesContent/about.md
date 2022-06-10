@@ -1,4 +1,4 @@
-In <span id="wordCount">0</span> words
+_In //wordCount// words._
 
 ## Bio
 
@@ -12,7 +12,7 @@ After that, I realized that what really motivates me is to **solve problems** us
 
 ### Work
 
-My first job was in a small accountability firm, part time, right after finishing high school. The fact it was small allowed me to work in all kind of stuff, like calculating tax payments, salary liquidations and even tax litigations with AFIP. And the rhythm of change of argentinian tax policies also became a benefit at learning how to adapt to a constantly changing enviroment.
+My first job was in a small accountability firm, part time, right after finishing high school. The fact it was small allowed me to work in all kind of stuff, like calculating tax payments, settlement of salaries and even tax litigations with AFIP. And the rhythm of change of argentinian tax policies also became a benefit at learning how to adapt to a constantly changing enviroment.
 
 In 2018 I joined Camuzzi Gas, a major residential gas supplier, as an accounts payable trainee. At first the work was very simple, receiving documentation and registering it into SAP. Around october 2018 I became responsible for preparing documentation for decree [1053/18](http://servicios.infoleg.gob.ar/infolegInternet/anexos/315000-319999/316448/norma.htm) a major Macri's administration resolution.
 
@@ -43,9 +43,9 @@ In August 2021 I left Camuzzi looking for new positions related to software and 
 
 ## Hobbies
 
-- Attend [DC talks](https://www.dc.uba.ar/event/)
-- Blogging at [Yago's Notion](https://yagopajarino.notion.site/Blog-aebd1e717424427c8003cca0cebaa131)
-- Coffee thursday.
+- Attend [DC talks](https://www.dc.uba.ar/event/).
+- Blogging at [my Notion](https://yagopajarino.notion.site/Blog-aebd1e717424427c8003cca0cebaa131).
+- Coffee thursday. Every thursday I visit a new coffee shop in Buenos Aires.
+- Reading. Check out my [goodreads shelf](https://www.goodreads.com/review/list/132816000-yago?ref=nav_mybooks&shelf=read).
 - **Youtube fav channels:** [derivando](https://www.youtube.com/c/Derivando), [Stuff Made Here](https://www.youtube.com/c/StuffMadeHere), [Mark Rober](https://www.youtube.com/c/MarkRober), [Numberphile](https://www.youtube.com/c/numberphile), [Te lo resumo](https://www.youtube.com/c/Teloresumoasinomas), [Mates Mike](https://www.youtube.com/c/MatesMike), [Veritasium](https://www.youtube.com/c/veritasium), [Damian Kuc](https://www.youtube.com/c/DamianKucHI), [Quantum Fracture](https://www.youtube.com/user/QuantumFracture).
 - **Spotify fav podcasts:** [Lex Fridman](https://open.spotify.com/show/2MAi0BvDc6GTFvKFPXnkCL?si=9efa729328574662), [ETPA](https://open.spotify.com/show/2z6E5sPwoFAXte3cDQ5DuP?si=3f5b7637e0c24196), [Huberman Lab](https://open.spotify.com/show/79CkJF3UJTHFV8Dse3Oy0P?si=7e337ace84c34ae1), [The Changelog](https://open.spotify.com/show/5bBki72YeKSLUqyD94qsuJ?si=a8eed06eec554719), [TiendaCrypto Spaces](https://open.spotify.com/show/61HzOv3FWc1N8rE7NPKMsq?si=7e3b36567e314825), [Unexplainable](https://open.spotify.com/show/0PhoePNItwrXBnmAEZgYmt?si=d2ef5c73fc8a4f71).
-- Reading. Check out my [goodreads shelf](https://www.goodreads.com/review/list/132816000-yago?ref=nav_mybooks&shelf=read).
