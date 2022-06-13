@@ -261,6 +261,7 @@
     padding-bottom: .3em;
     font-size: 1.5em;
     border-bottom: 1px solid hsla(210,18%,87%,1);
+    padding-top: 4.8rem; margin-top: -4.8rem; /* Para que la sixed navBar no pise el título de las sección */
   }
   
   .markdown-body h3 {
@@ -501,7 +502,7 @@
     content: "";
   }
   
-  .markdown-body>*:first-child {
+  .markdown-body>:not(h2):first-child {
     margin-top: 0 !important;
   }
   
