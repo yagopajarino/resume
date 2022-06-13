@@ -14,6 +14,7 @@ import "./style/markdown.css";
 import "./style/nav.css";
 import "./style/info-container.css";
 import "./style/article-header.css";
+import "./style/project-body.css";
 import React from "react";
 
 let icon = document.querySelector("#icon");

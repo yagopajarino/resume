@@ -1,0 +1,45 @@
+.project-body{
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    color: #24292f;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+.project-body img {
+    width: 100%;
+}
+
+.project-body section {
+    margin: 1rem 0;
+    border: 1px solid #e3e3e3;
+}
+
+.project-body h2 {
+    padding: 0 2rem;
+}
+
+.project-body h2 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    padding-bottom: .3em;
+    font-size: 1.5em;
+}
+
+.project-body p {
+    padding: 1rem 2rem;
+    margin: 0;
+    background-color: hsl(0deg 0% 96%);
+}
+
+.project-body a {
+    display: flex;
+}
+
+.project-body span {
+    font-size: 1rem;
+}
