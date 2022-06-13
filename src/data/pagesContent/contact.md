@@ -2,13 +2,7 @@ The best way to reach me is by email to [yagopajarino@outlook.com](mailto:yagopa
 
 Check out my social media
 
-- Twitter
-- Instagram
-- Linkedin
-- Github
-
-## Where are you visiting?
-
-Select your country from the list and watch the scoreboard.
-
-Coming soon...
+- [Twitter](https://twitter.com/yagopajarino)
+- [Instagram](https://www.instagram.com/yagopajarino/)
+- [Linkedin](https://www.linkedin.com/in/yagopajarino/)
+- [Github](https://github.com/yagopajarino)
