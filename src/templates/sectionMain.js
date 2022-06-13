@@ -17,19 +17,7 @@ export default function SectionMain(props) {
     );
   }, []);
 
-  useEffect(() => {
-    if (
-      window.location.href.includes("/about") == true &&
-      mainContent.includes("//wordCount//")
-    ) {
-      let cont = mainContent.replace(/<[^>]*>/g, " ");
-      cont = cont.replace(/[,.]/g, " ");
-      cont = cont.replace(/\s+/g, " ");
-      cont = cont.trim();
-      var n = cont.split(" ").length;
-      setMainContent(mainContent.replace("//wordCount//", n));
-    }
-  }, [mainContent]);
+  useEffect(() => props.effects(mainContent, setMainContent), [mainContent]); //About effects
 
   return (
     <main
