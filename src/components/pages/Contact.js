@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import pagesData from "../../data/pagesData.json";
 import Article from "../../templates/article";
-import scoreBoard from "../../data/countriesScoreboard.json";
 
 export default function Contact() {
   let data = pagesData.filter(
