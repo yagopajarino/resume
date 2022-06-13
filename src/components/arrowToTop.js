@@ -11,7 +11,6 @@ export default function ArrowToTop() {
 
     function scrollFunction() {
       const pxDelta = document.querySelector("nav").offsetHeight - 1;
-      console.log(pxDelta);
       if (
         document.body.scrollTop > pxDelta ||
         document.documentElement.scrollTop > pxDelta
