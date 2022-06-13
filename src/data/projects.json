@@ -1,0 +1,34 @@
+[
+    {
+        "id": "1",
+        "title": "Wengine",
+        "date": "June 2022",
+        "img": "../static/wengine.png",
+        "link": "https://wengine.com.ar",
+        "description": "Static corporative web for Wengine Estética Integral." 
+    },
+    {
+        "id": "2",
+        "title": "The Odin Project",
+        "date": "March 2022 ",
+        "img": "../static/TOP.png",
+        "link": "https://github.com/yagopajarino/the-Odin-Project",
+        "description": "The Odin Project curriculum submissions."
+    },
+    {
+        "id": "0",
+        "title": "Money Manager",
+        "date": "August 2021",
+        "img": "../static/projects-MM.png",
+        "link": "https://github.com/yagopajarino/mmanager",
+        "description": "Harvard's CS50 final project, a simple webapp for tracking money transactions."
+    },
+    {
+        "id": "3",
+        "title": "UBA",
+        "date": "January 2020",
+        "img": "../static/dc-uba.png",
+        "link": "https://github.com/yagopajarino/uba",
+        "description": "Universidad de Buenos Aires subjects repositories."
+    }
+]
