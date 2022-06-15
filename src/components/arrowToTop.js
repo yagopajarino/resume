@@ -15,9 +15,9 @@ export default function ArrowToTop() {
         document.body.scrollTop > pxDelta ||
         document.documentElement.scrollTop > pxDelta
       ) {
-        mybutton.style.bottom = "30px";
+        mybutton.style.bottom = "40px";
       } else {
-        mybutton.style.bottom = "-100px";
+        mybutton.style.bottom = "-120px";
       }
     }
 
