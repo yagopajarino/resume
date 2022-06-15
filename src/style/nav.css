@@ -11,6 +11,10 @@ nav {
     z-index: 10000;
 }
 
+nav ul {
+    padding: 0;
+}
+
 nav a {
     font-size: 1rem;
     padding: 0.5rem 1.75rem 0.5rem 1.75rem;

@@ -939,3 +939,9 @@
   .markdown-body ::-webkit-calendar-picker-indicator {
     filter: invert(50%);
   }
+
+  @media screen and (max-width:1280px) {
+    .markdown-body {
+      font-size: 30px;
+    }
+  }

@@ -5,6 +5,7 @@ article {
     min-width: 500px;
     width: 60%;
     margin-left: 5rem;
+    order: 2;
 }
 
 article header {
@@ -15,4 +16,13 @@ article header span, h1 {
     font-size: 3rem;
     font-weight: 300;
     margin: 0;
+}
+
+@media (max-width:1300px) {
+    article {
+        order: 0;
+        margin-left: 0;
+        margin-bottom: 5rem;
+        width: 100%;
+    }
 }

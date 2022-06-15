@@ -2,7 +2,8 @@
     max-width: 25%;
     min-width: 300px;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    width: 25%; 
+    width: 25%;
+    order: 1; 
 }
 
 .infoContainer a {
@@ -37,7 +38,6 @@
     font-size: 1.35rem;
     letter-spacing: 0.3mm;
     color: #777676;
-    border-bottom: 1px dotted hsla(0,0%,62.7%,.65);
     transition: all 0.3s ease;
     width: fit-content
 }
@@ -73,7 +73,7 @@
 }
 
 .infoContainer .shortAbout .button {
-    width: fit-content;
+    width: 100%;
     padding: 1rem 1.5rem;
     font-weight: 700;
     font-size: 0.85rem;
@@ -87,6 +87,7 @@
 .infoContainer .shortAbout div {
     padding: 1rem 0;
     margin: 1em 0px;
+    min-width: 100%;
 }
 
 .infoContainer .shortAbout .button:hover {
@@ -111,7 +112,7 @@
 
 .infoContainer footer p {
     text-align: center;
-    font-size: small;
+    font-size: 1rem;
     margin: 2rem;
     color: #7f7f7f;
     letter-spacing: 0.25mm;
@@ -124,3 +125,47 @@
 .infoContainer footer svg:hover {
     color: #0f4ba6!important;
 }
+
+/* Media queries  */
+
+@media (max-width: 1280px) {
+    .infoContainer {
+        max-width: 100%;
+        order: 2;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infoContainer .profileResume div {
+        text-align: center;
+    }
+
+    .infoContainer .profileResume {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infoContainer .profileResume p {
+        margin: 0;
+    }
+
+    .infoContainer .profileResume a {
+        margin-bottom: 1rem;
+    }
+
+    .infoContainer .shortAbout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer {
+        width: 75%;
+    }
+}
+
