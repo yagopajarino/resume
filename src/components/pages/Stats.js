@@ -34,7 +34,7 @@ function Table(props) {
 
 export default function Stats() {
   const [age, setAge] = useState(0);
-  const [f1, setF1] = useState(0);
+  const [f1, setF1] = useState("");
   const [messi, setMessi] = useState(0);
   const [books, setBooks] = useState(0);
   const [blog, setBlog] = useState(0);
@@ -68,8 +68,8 @@ export default function Stats() {
   };
 
   useEffect(() => {
-    getAge(age, setAge);
     timeToNextRace(f1, setF1);
+    getAge(age, setAge);
   }, []);
 
   return (

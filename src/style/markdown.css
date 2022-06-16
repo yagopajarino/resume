@@ -211,15 +211,15 @@
   .markdown-body table {
     border-spacing: 0;
     border-collapse: collapse;
-    display: block;
     width: max-content;
-    max-width: 100%;
+    width: 100%;
     overflow: auto;
   }
   
   .markdown-body td,
   .markdown-body th {
     padding: 0;
+    width: 50%;
   }
   
   .markdown-body details summary {
@@ -666,6 +666,7 @@
   .markdown-body table td {
     padding: 6px 13px;
     border: 1px solid #d0d7de;
+    width: 50%;
   }
   
   .markdown-body table tr {
