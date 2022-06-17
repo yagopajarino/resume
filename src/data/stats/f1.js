@@ -31,7 +31,7 @@ function diffToString(d) {
   return `${els[0]}d ${els[1]}h ${els[2]}m ${els[3]}s`;
 }
 
-export default async function timeToNextRace(state, setState) {
+export default async function timeToNextRace(setState) {
   let url = "https://ergast.com/api/f1/current.json";
   const data = await fetch(url).then((response) => response.json());
   const raceDate = nextRaceDate(data);

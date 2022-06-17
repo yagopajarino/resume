@@ -19,7 +19,7 @@ main {
 }
 
 .container {
-    padding: 10rem 10rem 5rem 13rem;
+    padding: 10rem 10rem 3rem 13rem;
     display: flex;
     justify-content:flex-start;
     flex-wrap: wrap;

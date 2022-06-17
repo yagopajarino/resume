@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import SectionHeader from "../../templates/sectionHeader";
 import getAge from "../../data/stats/getAge";
 import timeToNextRace from "../../data/stats/f1";
+import getBikes from "../../data/stats/bikes";
+import getAdvice from "../../data/stats/advice";
+import getGasPrice from "../../data/stats/gasPrice";
 
 function Row(props) {
   props = props.info;
@@ -34,10 +37,10 @@ function Table(props) {
 
 export default function Stats() {
   const [age, setAge] = useState(0);
-  const [f1, setF1] = useState("");
-  const [messi, setMessi] = useState(0);
-  const [books, setBooks] = useState(0);
-  const [blog, setBlog] = useState(0);
+  const [f1, setF1] = useState("Loading...");
+  const [bikes, setBikes] = useState("Loading...");
+  const [gasPrice, setgasPrice] = useState("Loading...");
+  const [advice, setAdvice] = useState("Loading...");
 
   const [commmits, setCommits] = useState(0);
   const [stars, setStars] = useState(0);
@@ -50,9 +53,9 @@ export default function Stats() {
     content: [
       { name: "Age", value: age },
       { name: "Time until next F1 race", value: f1 },
-      { name: "Messi total goals", value: messi },
-      { name: "Books I read", value: books },
-      { name: "Blog entries", value: blog },
+      { name: "Avalible bikes at this station", value: bikes },
+      { name: "Petrol price in here", value: gasPrice },
+      { name: "Need an advice?", value: advice },
     ],
   };
 
@@ -68,8 +71,11 @@ export default function Stats() {
   };
 
   useEffect(() => {
-    timeToNextRace(f1, setF1);
+    timeToNextRace(setF1);
     getAge(age, setAge);
+    getAdvice(advice, setAdvice);
+    getGasPrice(gasPrice, setgasPrice);
+    getBikes(bikes, setBikes);
   }, []);
 
   return (
