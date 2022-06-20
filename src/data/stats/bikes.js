@@ -1,5 +1,5 @@
 export default async function getBikes(setBikes, setMap) {
-  const root = "http://api.citybik.es";
+  const root = "https://api.citybik.es";
   const endpNetworks = "/v2/networks";
   const data = await fetch(root + endpNetworks).then((response) =>
     response.json()
@@ -24,7 +24,7 @@ export default async function getBikes(setBikes, setMap) {
 
   const lat = station.latitude;
   const lon = station.longitude;
-  let stationURL = `http://www.google.com/maps/place/${lat},${lon}`;
+  let stationURL = `https://www.google.com/maps/place/${lat},${lon}`;
   setBikes(`${freeBikes}/${emptySlots}`);
   setMap(stationURL);
 }
