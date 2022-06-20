@@ -1,4 +1,4 @@
-export default async function getBikes(state, setState) {
+export default async function getBikes(setBikes, setMap) {
   const root = "http://api.citybik.es";
   const endpNetworks = "/v2/networks";
   const data = await fetch(root + endpNetworks).then((response) =>
@@ -9,13 +9,22 @@ export default async function getBikes(state, setState) {
   const stationNetwork = networks[k];
 
   const endpStation = stationNetwork.href;
-  const dataSt = await fetch(root + endpStation).then((response) =>
-    response.json()
-  );
+  let qStations = 0;
+  let dataSt;
+  while (qStations == 0) {
+    dataSt = await fetch(root + endpStation).then((response) =>
+      response.json()
+    );
+    qStations = dataSt.network.stations.length;
+  }
 
   const station = dataSt.network.stations[0];
   const freeBikes = station.free_bikes;
+  const emptySlots = station.empty_slots;
+
   const lat = station.latitude;
   const lon = station.longitude;
-  setState(freeBikes);
+  let stationURL = `http://www.google.com/maps/place/${lat},${lon}`;
+  setBikes(`${freeBikes}/${emptySlots}`);
+  setMap(stationURL);
 }
