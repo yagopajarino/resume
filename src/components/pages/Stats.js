@@ -10,7 +10,16 @@ function Row(props) {
   props = props.info;
   return (
     <tr>
-      <td>{props[0]}</td>
+      {props[2] ? (
+        <td>
+          {props[0]}{" "}
+          <a href={props[2]} target="_blank">
+            here
+          </a>
+        </td>
+      ) : (
+        <td>{props[0]}</td>
+      )}
       <td>{props[1]}</td>
     </tr>
   );
@@ -28,7 +37,12 @@ function Table(props) {
       </thead>
       <tbody>
         {props.content.map((i) => {
-          return <Row info={[i.name, i.value]} key={i.name} />;
+          return (
+            <Row
+              info={i.map ? [i.name, i.value, i.map] : [i.name, i.value]}
+              key={i.name}
+            />
+          );
         })}
       </tbody>
     </table>
@@ -39,7 +53,9 @@ export default function Stats() {
   const [age, setAge] = useState(0);
   const [f1, setF1] = useState("Loading...");
   const [bikes, setBikes] = useState("Loading...");
+  const [bikesMap, setBikesMap] = useState("");
   const [gasPrice, setgasPrice] = useState("Loading...");
+  const [gasPriceMap, setGasPriceMap] = useState("");
   const [advice, setAdvice] = useState("Loading...");
 
   const [commmits, setCommits] = useState(0);
@@ -53,8 +69,8 @@ export default function Stats() {
     content: [
       { name: "Age", value: age },
       { name: "Time until next F1 race", value: f1 },
-      { name: "Avalible bikes at this station", value: bikes },
-      { name: "Petrol price in here", value: gasPrice },
+      { name: "Avalible bikes in ", value: bikes, map: bikesMap },
+      { name: "Petrol price (USD) in ", value: gasPrice, map: gasPriceMap },
       { name: "Need an advice?", value: advice },
     ],
   };
@@ -71,11 +87,12 @@ export default function Stats() {
   };
 
   useEffect(() => {
+    console.log("rendered");
     timeToNextRace(setF1);
     getAge(age, setAge);
     getAdvice(advice, setAdvice);
-    getGasPrice(gasPrice, setgasPrice);
-    getBikes(bikes, setBikes);
+    getGasPrice(setgasPrice, setGasPriceMap);
+    getBikes(setBikes, setBikesMap);
   }, []);
 
   return (
@@ -83,7 +100,22 @@ export default function Stats() {
       <SectionHeader title="Stats" />
       <main className="markdown-body">
         <Table data={personalData} />
-        <Table data={githubData} />
+        {/* <Table data={githubData} /> */}
+        <p>Posible thanks to</p>
+        <ul>
+          <li>
+            <a href="https://ergast.com/mrd/">Ergast F1 API</a>
+          </li>
+          <li>
+            <a href="https://citybik.es/#about">Citybik</a>
+          </li>
+          <li>
+            <a href="https://docs.apis.is/">Iceland APIs</a>
+          </li>
+          <li>
+            <a href="https://api.adviceslip.com/">Advice slip API</a>
+          </li>
+        </ul>
       </main>
     </article>
   );
