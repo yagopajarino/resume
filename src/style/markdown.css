@@ -221,6 +221,7 @@
   .markdown-body th {
     padding: 0;
     width: 50%;
+    min-width: 340px;
   }
   
   .markdown-body details summary {
