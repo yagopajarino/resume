@@ -46,11 +46,15 @@ main {
 
 @media (max-width: 1280px) {
     html {
-        font-size: 26px;
+        font-size: 35px;
     }    
 
     .container {
        justify-content: center;
        padding: 10rem 2rem 5rem 2rem;
+    }
+
+    main {
+        padding: 2rem
     }
 }
