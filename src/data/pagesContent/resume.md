@@ -18,7 +18,7 @@ Feb. 2018 - Aug. 2021
 - Developed proccess automation tools using python and Windows PowerShell.
 - Coordinated information requirements requested by the industry regulator agency, [ENARGAS](https://www.enargas.gob.ar/)
 - Developed control dashboards using Microsoft PowerBI for accounts payable, treasury and financial management departments.
-- SAP documents contabilization and accounts control. ESpecial mention to my old friend [FBL1N](https://www.cvosoft.com/glosario-sap/sap-fi/fbl1n-1607.html)
+- SAP documents contabilization and accounts control. Special mention to my old friend [FBL1N](https://www.cvosoft.com/glosario-sap/sap-fi/fbl1n-1607.html)
 - Defined and developed the department's KPI.
 
 ### Estudio Thames
