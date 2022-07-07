@@ -3,7 +3,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 
-import contactInfo from "../data/contactInfo.json";
+import contactInfo from "../data/contact/contactInfo.json";
 
 library.add(fab, fas);
 

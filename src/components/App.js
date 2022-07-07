@@ -1,7 +1,7 @@
-import NavBar from "./navBar";
-import MainFrame from "./mainFrame";
+import NavBar from "./NavBar";
+import MainFrame from "./MainFrame";
 import React from "react";
-import ArrowUp from "./arrowToTop";
+import ArrowUp from "./ArrowToTop";
 
 export default function App() {
   return (

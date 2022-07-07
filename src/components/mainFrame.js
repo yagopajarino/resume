@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import ProfileSection from "./profileSection";
+import ProfileSection from "./ProfileSection";
 import React from "react";
 
 export default function MainFrame() {

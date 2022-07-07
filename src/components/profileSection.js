@@ -1,7 +1,7 @@
 import profilePic from "../static/profilePic.jpeg";
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
-import Footer from "./footer";
+import Footer from "./Footer";
 import React from "react";
 
 export default function ProfileSection() {
@@ -29,7 +29,7 @@ export default function ProfileSection() {
       <section className="shortAbout">
         <h3>ABOUT</h3>
         <p>
-          Hey! I'm Yago. I like to create things, to work with data and learn
+          Hey! I'm Yago. I like to create things, work with data and learn
           stuff. &#x1f913; <br></br>I am a{" "}
           <a className="link" href="https://uca.edu.ar/es/home">
             UCA

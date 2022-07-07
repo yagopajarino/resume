@@ -1,6 +1,5 @@
 import SectionHeader from "../../templates/sectionHeader";
-import pagesData from "../../data/pagesData.json";
-import projectsData from "../../data/projects.json";
+import projectsData from "../../data/projects/projects.json";
 import img_mmanager from "../../static/mmanager.png";
 import img_wengine from "../../static/wengine.png";
 import img_top from "../../static/TOP.png";
@@ -8,9 +7,6 @@ import img_uba from "../../static/dc-uba.png";
 import { useState } from "react";
 
 export default function Projects() {
-  const [data, setData] = useState(
-    pagesData.filter((item) => item.title.toUpperCase() == "PROJECTS")[0]
-  );
   const [pros, setPros] = useState(projectsData);
 
   function effects() {}
@@ -40,14 +36,8 @@ export default function Projects() {
 
   console.log(pros);
   return (
-    // <Article
-    //   title={data.title}
-    //   subtitle={data.subtitle}
-    //   fileName="projects"
-    //   effects={effects}
-    // />
     <article className="main" id="routerContainer">
-      <SectionHeader title={data.title} subtitle={data.subtitle} />
+      <SectionHeader title="Projects" />
       <main className="project-body">{proyectos}</main>
     </article>
   );

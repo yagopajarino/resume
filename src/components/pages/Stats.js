@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import SectionHeader from "../../templates/sectionHeader";
 import getAge from "../../data/stats/getAge";
-import timeToNextRace from "../../data/stats/f1";
-import getBikes from "../../data/stats/bikes";
-import getAdvice from "../../data/stats/advice";
+import timeToNextRace from "../../data/stats/getF1";
+import getBikes from "../../data/stats/getBikes";
+import getAdvice from "../../data/stats/getAdvice";
 import getGasPrice from "../../data/stats/gasPrice";
 
 function Row(props) {
@@ -107,7 +107,7 @@ export default function Stats() {
             <a href="https://ergast.com/mrd/">Ergast F1 API</a>
           </li>
           <li>
-            <a href="https://citybik.es/#about">Citybik</a>
+            <a href="https://citybik.es/#about">Citybikes</a>
           </li>
           <li>
             <a href="https://docs.apis.is/">Iceland APIs</a>
