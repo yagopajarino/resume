@@ -10,5 +10,4 @@ export default async function getGasPrice(setPrice, setMap) {
   const link = `https://www.google.com/maps/place/${lat},${lon}`;
   setPrice((station.bensin95 * factor).toFixed(4));
   setMap(link);
-  console.log(link);
 }

@@ -87,7 +87,6 @@ export default function Stats() {
   };
 
   useEffect(() => {
-    console.log("rendered");
     timeToNextRace(setF1);
     getAge(age, setAge);
     getAdvice(advice, setAdvice);
