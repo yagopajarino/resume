@@ -2,6 +2,7 @@ import { faMinimize } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import showdown from "showdown";
 import content from "../../data/pagesContent/welcome.md";
+import Flags from "../Flags";
 
 let converter = new showdown.Converter();
 
@@ -66,6 +67,10 @@ export default function Welcome() {
         className="markdown-body"
         dangerouslySetInnerHTML={{ __html: mainContent }}
       ></main>
+      <div className="flags">
+        <h1>Here go the flags</h1>
+        <Flags />
+      </div>
     </article>
   );
 }
