@@ -1,12 +1,20 @@
+function endOfSeason(item) {
+  const now = new Date();
+  const lastRaceOfSeason = Date.parse(
+    `${item.date}, ${item.time.slice(0, item.time.length - 1)} UTC`
+  );
+  return now > lastRaceOfSeason;
+}
+
 function nextRaceDate(data) {
   const races = data.MRData.RaceTable.Races;
+  if (endOfSeason(races.at(-1))) {
+    return -1;
+  }
   const now = new Date();
   const futureRaces = races
     .filter(
       (item) =>
-        // console.log(
-        //   `${item.date}, ${item.time.slice(0, item.time.length - 1)} UTC`
-        // )
         Date.parse(
           `${item.date}, ${item.time.slice(0, item.time.length - 1)} UTC`
         ) > now
@@ -36,9 +44,13 @@ export default async function timeToNextRace(setState) {
   const data = await fetch(url).then((response) => response.json());
   const raceDate = nextRaceDate(data);
 
-  setInterval(() => {
-    const now = new Date();
-    const diff = raceDate - now;
-    setState(diffToString(diff));
-  }, 1000);
+  if (raceDate != -1) {
+    setInterval(() => {
+      const now = new Date();
+      const diff = raceDate - now;
+      setState(diffToString(diff));
+    }, 1000);
+  } else {
+    setState("No more races this season");
+  }
 }
