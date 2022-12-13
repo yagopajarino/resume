@@ -1,9 +1,11 @@
 import emojiFlags from "emoji-flags";
 import { useState } from "react";
-import Emoji from "../Emoji";
+import Emoji from "./Emoji";
+import Loading from "./Loading";
 
-export default function Flags() {
+export default function Flags({ setShowScores }) {
   const [data, setData] = useState(emojiFlags.data);
+  const [isLoading, setIsLoading] = useState(false);
 
   const filterData = (e) => {
     const value = e.target.value;
@@ -14,16 +16,26 @@ export default function Flags() {
 
   return (
     <>
-      <input
+      {/* <input
         placeholder="search"
         onChange={filterData}
         className="searchbar"
-      ></input>
-      <div className="wrapper">
-        {data.map((i) => (
-          <Emoji symbol={i.emoji} name={i.name} />
-        ))}
-      </div>
+      ></input> */}
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <div className="wrapper">
+          {data.map((i) => (
+            <Emoji
+              symbol={i.emoji}
+              name={i.name}
+              setShowScores={setShowScores}
+              setIsLoading={setIsLoading}
+              code={i.code}
+            />
+          ))}
+        </div>
+      )}
     </>
   );
 }
