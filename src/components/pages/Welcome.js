@@ -3,12 +3,14 @@ import { useState, useEffect } from "react";
 import showdown from "showdown";
 import content from "../../data/pagesContent/welcome.md";
 import Flags from "../Flags";
+import Scoreboard from "../Scoreboard";
 
 let converter = new showdown.Converter();
 
 export default function Welcome() {
   const [texto, setTexto] = useState("");
   const [mainContent, setMainContent] = useState("");
+  const [showScores, setShowScores] = useState(false);
 
   useEffect(() => {
     let i = 0;
@@ -58,6 +60,18 @@ export default function Welcome() {
     );
   }, []);
 
+  const flags = (
+    <div className="flags">
+      <Flags setShowScores={setShowScores} />
+    </div>
+  );
+
+  const scores = (
+    <div className="scores">
+      <Scoreboard />
+    </div>
+  );
+
   return (
     <article className="main welcomeSection">
       <header>
@@ -67,9 +81,12 @@ export default function Welcome() {
         className="markdown-body"
         dangerouslySetInnerHTML={{ __html: mainContent }}
       ></main>
-      <div className="flags">
-        <h1>Here go the flags</h1>
-        <Flags />
+      <div className="flags-container">
+        <h2>Say Hi</h2>
+        <p>
+          Select your country and see where it is in the visitors scoreboard :)
+        </p>
+        {showScores ? scores : flags}
       </div>
     </article>
   );
