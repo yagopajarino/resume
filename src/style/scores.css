@@ -1,0 +1,17 @@
+.scores {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.25rem;
+}
+
+.scores table {
+    width: 100%;
+    text-align: center;
+}
+
+.scores thead {
+    font-size: 1.75rem;
+}
+
+.scores .flag {
+    font-size: 2rem;
+}
