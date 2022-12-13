@@ -1,11 +1,25 @@
-.flags {
+.flags-container {
     padding: 0 4rem 3rem 4rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.flags-container h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.flags-container p {
+    font-size: 1.25rem;
 }
 
 .flags .wrapper {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    gap: 0px 0px; 
+    gap: 0px 0px;
+    grid-auto-rows: 100px
 }
 
 .flags .container {
@@ -22,11 +36,12 @@
 }
 
 .flags .emoji {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .flags .container:hover {
-    background-color: #7fa2d876;
+    background-color: #c5dbfd76;
+    color: #1f2f8a
 }
 
 .flags .searchbar {

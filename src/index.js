@@ -17,6 +17,8 @@ import "./style/article-header.css";
 import "./style/project-body.css";
 import "./style/hamburgerMenu.css";
 import "./style/flags.css";
+import "./style/scores.css";
+import "./style/loading.css";
 import React from "react";
 
 let icon = document.querySelector("#icon");
