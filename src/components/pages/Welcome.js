@@ -83,9 +83,7 @@ export default function Welcome() {
       ></main>
       <div className="flags-container">
         <h2>Say Hi</h2>
-        <p>
-          Select your country and see where it is in the visitors scoreboard :)
-        </p>
+        <p>Help your country reach the top in the visitors leaderboard 💪🏼</p>
         {showScores ? scores : flags}
       </div>
     </article>
