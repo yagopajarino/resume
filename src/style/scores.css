@@ -6,6 +6,10 @@
 .scores table {
     width: 100%;
     text-align: center;
+    padding: 1rem;
+    border: 1px solid #e1e1e13f;
+    border-radius: 10px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 .scores thead {
