@@ -18,7 +18,7 @@ export default function Scoreboard() {
       <thead>
         <th>Flag</th>
         <th>Country</th>
-        <th>Count</th>
+        <th>Visitors</th>
       </thead>
       <tbody>
         {scores.map((i) => {
