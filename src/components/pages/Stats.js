@@ -5,6 +5,7 @@ import timeToNextRace from "../../data/stats/getF1";
 import getBikes from "../../data/stats/getBikes";
 import getAdvice from "../../data/stats/getAdvice";
 import getGasPrice from "../../data/stats/gasPrice";
+import api from "../../api/api";
 
 function Row(props) {
   props = props.info;
@@ -14,32 +15,33 @@ function Row(props) {
         <td>
           {props[0]}{" "}
           <a href={props[2]} target="_blank">
-            here
+            {props[3]}
           </a>
         </td>
       ) : (
         <td>{props[0]}</td>
       )}
-      <td>{props[1]}</td>
+      <td className={props[0] == "My" ? "odometer" : ""}>{props[1]}</td>
     </tr>
   );
 }
 
 function Table(props) {
-  props = props.data;
   return (
     <table>
       <thead>
         <tr>
-          <th>{props.header}</th>
+          <th>{props.data.header}</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
-        {props.content.map((i) => {
+        {props.data.content.map((i) => {
           return (
             <Row
-              info={i.map ? [i.name, i.value, i.map] : [i.name, i.value]}
+              info={
+                i.ref ? [i.name, i.value, i.ref, i.anchor] : [i.name, i.value]
+              }
               key={i.name}
             />
           );
@@ -53,6 +55,7 @@ export default function Stats() {
   const [age, setAge] = useState(0);
   const [f1, setF1] = useState("Loading...");
   const [bikes, setBikes] = useState("Loading...");
+  const [count, setCount] = useState("Loading...");
   const [bikesMap, setBikesMap] = useState("");
   const [gasPrice, setgasPrice] = useState("Loading...");
   const [gasPriceMap, setGasPriceMap] = useState("");
@@ -69,9 +72,25 @@ export default function Stats() {
     content: [
       { name: "Age", value: age },
       { name: "Time until next F1 race", value: f1 },
-      { name: "Avalible bikes in ", value: bikes, map: bikesMap },
-      { name: "Petrol price (USD) in ", value: gasPrice, map: gasPriceMap },
+      {
+        name: "Avalible bikes in ",
+        value: bikes,
+        ref: bikesMap,
+        anchor: "here",
+      },
+      {
+        name: "Petrol price (USD) in ",
+        value: gasPrice,
+        ref: gasPriceMap,
+        anchor: "here",
+      },
       { name: "Need an advice?", value: advice },
+      {
+        name: "Views of the greatest",
+        value: count,
+        ref: "https://youtu.be/dQw4w9WgXcQ",
+        anchor: "YouTube video",
+      },
     ],
   };
 
@@ -92,6 +111,7 @@ export default function Stats() {
     getAdvice(advice, setAdvice);
     getGasPrice(setgasPrice, setGasPriceMap);
     getBikes(setBikes, setBikesMap);
+    api.getCount().then((r) => setCount(r.toLocaleString()));
   }, []);
 
   return (
@@ -113,6 +133,11 @@ export default function Stats() {
           </li>
           <li>
             <a href="https://api.adviceslip.com/">Advice slip API</a>
+          </li>
+          <li>
+            <a href="https://developers.google.com/youtube/v3">
+              Youtube API v3
+            </a>
           </li>
         </ul>
       </main>
