@@ -54,3 +54,14 @@
 .flags .searchbar:focus-visible {
     outline-color: inherit;
 }
+
+@media (max-width: 1280px) {
+    .flags-container {
+        padding: 0 2rem;
+    }
+
+    .flags .wrapper {
+        grid-auto-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr
+    }
+}
