@@ -23,10 +23,17 @@ const ping = () => {
   fetch(url);
 };
 
+const getCount = async () => {
+  const url = `${process.env.REACT_APP_API}/stats/youtube`;
+  const data = await fetch(url).then((r) => r.json());
+  return data;
+};
+
 const api = {
   ping,
   getScores,
   postCountry,
+  getCount,
 };
 
 export default api;
