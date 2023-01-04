@@ -19,3 +19,9 @@
 .scores .flag {
     font-size: 2rem;
 }
+
+@media (max-width: 1280px) {
+    .scores {
+        margin-bottom: 2rem;
+    }
+}
