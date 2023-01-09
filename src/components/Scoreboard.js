@@ -13,7 +13,7 @@ export default function Scoreboard() {
     callScores();
   }, []);
 
-  return (
+  const table = (
     <table>
       <thead>
         <th>Flag</th>
@@ -34,4 +34,6 @@ export default function Scoreboard() {
       </tbody>
     </table>
   );
+
+  return scores.length == 0 ? "" : table;
 }
