@@ -1,6 +1,7 @@
 import react, { useEffect, useState } from "react";
 import api from "../api/api";
 import emojiFlags from "emoji-flags";
+import Loading from "./Loading";
 
 export default function Scoreboard() {
   const [scores, setScores] = useState([]);
@@ -35,5 +36,5 @@ export default function Scoreboard() {
     </table>
   );
 
-  return scores.length == 0 ? "" : table;
+  return scores.length == <Loading /> ? "" : table;
 }
